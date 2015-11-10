@@ -1,7 +1,7 @@
 //
 //  ZWDevice.m
 //
-//  Copyright (c) 2014 Zach Waugh (http://zachwaugh.me)
+//  Copyright (c) 2015 Zach Waugh (http://zachwaugh.me)
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
 //  of this software and associated documentation files (the "Software"), to deal
@@ -23,20 +23,10 @@
 
 #import "ZWDevice.h"
 #import <sys/utsname.h>
-#import <UIKit/UIDevice.h>
 
 @implementation ZWDevice
 
-+ (NSString *)hardwareModel
-{
-    struct utsname systemInfo;
-    uname(&systemInfo);
-
-    return [NSString stringWithCString:systemInfo.machine encoding:NSUTF8StringEncoding];
-}
-
-+ (NSString *)model
-{
++ (NSDictionary *)models {
     static NSDictionary *_models = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
@@ -92,8 +82,23 @@
                     };
     });
 
-    NSString *hardwareModel = [self hardwareModel];
-    return _models[hardwareModel] ?: UIDevice.currentDevice.model;
+    return _models;
+}
+
++ (NSString *)modelIdentifier {
+    struct utsname systemInfo;
+    uname(&systemInfo);
+    
+    return [NSString stringWithCString:systemInfo.machine encoding:NSUTF8StringEncoding];
+}
+
++ (NSString *)model {
+    NSString *identifier = self.modelIdentifier;
+    return [self modelForIdentifier:identifier];
+}
+
++ (NSString *)modelForIdentifier:(NSString *)identifier {
+    return self.models[identifier] ?: UIDevice.currentDevice.model;
 }
 
 @end
