@@ -73,6 +73,8 @@
                     @"iPad5,2": @"iPad mini 4",
                     @"iPad5,3": @"iPad Air 2",
                     @"iPad5,4": @"iPad Air 2",
+                    @"iPad6,7": @"iPad Pro",
+                    @"iPad6,8": @"iPad Pro",
                     @"iPod1,1": @"iPod touch",
                     @"iPod2,1": @"iPod touch (2nd gen)",
                     @"iPod3,1": @"iPod touch (3rd gen)",
