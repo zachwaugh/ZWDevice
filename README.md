@@ -5,13 +5,19 @@ iOS hardware model to name library. This uses simple model names, I don't try to
 
 ## Install
 
-Copy `ZWDevice.h` and `ZWDevice.m` to your project.
+Use Carthage:
 
-or use CocoaPods:
+```
+git "git@github.com:zachwaugh/ZWDevice.git" "master"
+```
+
+Use CocoaPods:
 
 ```ruby
 pod 'ZWDevice', :git => 'https://github.com/zachwaugh/ZWDevice.git'
 ```
+
+Or copy `ZWDevice.h` and `ZWDevice.m` to your project.
 
 ## Usage
 
