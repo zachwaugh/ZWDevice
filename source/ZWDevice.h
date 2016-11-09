@@ -25,7 +25,7 @@
 
 @interface ZWDevice: NSObject
 
-+ (NSString *)model;
-+ (NSString *)modelForIdentifier:(NSString *)identifier;
++ (nonnull NSString *)model;
++ (nonnull NSString *)modelForIdentifier:(nonnull NSString *)identifier;
 
 @end

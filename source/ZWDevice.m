@@ -101,7 +101,7 @@
     return [NSString stringWithCString:systemInfo.machine encoding:NSUTF8StringEncoding];
 }
 
-+ (NSString *)model {
++ (nonnull NSString *)model {
     NSString *identifier = self.modelIdentifier;
     return [self modelForIdentifier:identifier];
 }
