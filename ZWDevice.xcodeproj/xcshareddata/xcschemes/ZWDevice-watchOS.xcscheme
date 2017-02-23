@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0820"
+   LastUpgradeVersion = "0810"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "FC5BE1811E5F59E900B2BD60"
-               BuildableName = "ZWDevice-watchOS.framework"
+               BuildableName = "ZWDevice.framework"
                BlueprintName = "ZWDevice-watchOS"
                ReferencedContainer = "container:ZWDevice.xcodeproj">
             </BuildableReference>
@@ -29,6 +29,15 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "92A354A51BF25FC50061A24D"
+            BuildableName = "ZWDevice.framework"
+            BlueprintName = "ZWDevice"
+            ReferencedContainer = "container:ZWDevice.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -42,15 +51,6 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "FC5BE1811E5F59E900B2BD60"
-            BuildableName = "ZWDevice-watchOS.framework"
-            BlueprintName = "ZWDevice-watchOS"
-            ReferencedContainer = "container:ZWDevice.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -60,15 +60,6 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "FC5BE1811E5F59E900B2BD60"
-            BuildableName = "ZWDevice-watchOS.framework"
-            BlueprintName = "ZWDevice-watchOS"
-            ReferencedContainer = "container:ZWDevice.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
