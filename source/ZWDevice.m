@@ -52,6 +52,7 @@
                     @"iPhone9,3": @"iPhone 7",
                     @"iPhone9,2": @"iPhone 7 Plus",
                     @"iPhone9,4": @"iPhone 7 Plus",
+                    
                     @"iPad1,1": @"iPad",
                     @"iPad2,1": @"iPad 2",
                     @"iPad2,2": @"iPad 2",
@@ -82,12 +83,20 @@
                     @"iPad6,4": @"iPad Pro (9.7 inch)",
                     @"iPad6,7": @"iPad Pro (12.9 inch)",
                     @"iPad6,8": @"iPad Pro (12.9 inch)",
+                    
                     @"iPod1,1": @"iPod touch",
                     @"iPod2,1": @"iPod touch (2nd gen)",
                     @"iPod3,1": @"iPod touch (3rd gen)",
                     @"iPod4,1": @"iPod touch (4th gen)",
                     @"iPod5,1": @"iPod touch (5th gen)",
-                    @"iPod7,1": @"iPod touch (6th gen)"
+                    @"iPod7,1": @"iPod touch (6th gen)",
+                    
+                    @"Watch1,1": @"Apple Watch (38mm)",
+                    @"Watch1,2": @"Apple Watch (42mm)",
+                    @"Watch2,3": @"Apple Watch Series 2 (38mm)",
+                    @"Watch2,4": @"Apple Watch Series 2 (42mm)",
+                    @"Watch2,6": @"Apple Watch Series 1 (38mm)",
+                    @"Watch2,7": @"Apple Watch Series 1 (42mm)",
                     };
     });
 
